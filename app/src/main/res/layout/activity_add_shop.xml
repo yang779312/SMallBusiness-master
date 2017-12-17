@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_4">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="id"
+                android:inputType="none"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="name"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="title"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="price"
+                android:inputType="number"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/quantifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="quantifier"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/reserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="reserve"
+                android:inputType="number"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="sales"
+                android:inputType="number"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/imgUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="imgUrl,如果多图请使用(#@#)隔开"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="normal" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="des"
+                android:inputType="textPersonName"
+                android:lines="5"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="des"
+                android:inputType="textPersonName"
+                android:lines="5"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="添加"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/add"
+        android:text="删除" />
+</RelativeLayout>

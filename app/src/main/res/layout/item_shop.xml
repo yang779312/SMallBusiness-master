@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:background="#fff"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/shop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/shop_title"
+        android:text="122"
+        android:textColor="#f00" />
+
+
+    <TextView
+        android:id="@+id/shop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="新郑红枣"
+
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/shop_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_title"
+        android:layout_toEndOf="@+id/imageView"
+        android:lines="3"
+        android:text="郑州大红枣，好吃的不得了，按商铺i电车男次u阿森纳的长安商场乃是的那次u阿斯顿年擦拭你嗲死你嗲设定参数的擦拭" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shop_des"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/shop_des"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>
